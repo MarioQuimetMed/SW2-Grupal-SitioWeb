@@ -1,0 +1,393 @@
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Monee</h1>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a
+            (click)="scrollToSection('inicio')"
+            [class.active]="activeSection === 'inicio'"
+            >Inicio</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="scrollToSection('caracteristicas')"
+            [class.active]="activeSection === 'caracteristicas'"
+            >Características</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="scrollToSection('precios')"
+            [class.active]="activeSection === 'precios'"
+            >Precios</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="scrollToSection('quienes-somos')"
+            [class.active]="activeSection === 'quienes-somos'"
+            >Quiénes Somos</a
+          >
+        </li>
+        <li>
+          <a
+            (click)="scrollToSection('contactanos')"
+            [class.active]="activeSection === 'contactanos'"
+            >Contáctanos</a
+          >
+        </li>
+      </ul>
+      <div class="cta-button">
+        <a
+          class="btn-primary"
+          href="https://github.com/MarioQuimetMed/Sw2-Grupal-Movil/releases/download/apk/monee.apk"
+          target="_blank"
+          rel="noopener"
+        >
+          Descargar Apk
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Gestiona tus finanzas personales de forma inteligente</h1>
+      <p>
+        Con Monee, toma el control de tu dinero, ahorra más y cumple tus metas
+        financieras.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Prueba Gratuita</button>
+        <button class="btn-secondary">Saber Más</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img
+        src="assets/images/dashboard-preview.svg"
+        alt="Monee Dashboard Preview"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="features" id="caracteristicas">
+  <div class="container">
+    <div class="section-header">
+      <h2>Características Principales</h2>
+      <p>Descubre cómo Monee te ayuda a organizar tus finanzas</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Seguimiento de Gastos</h3>
+        <p>
+          Visualiza y categoriza automáticamente tus gastos para saber
+          exactamente dónde va tu dinero.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="icon-goal"></i>
+        </div>
+        <h3>Metas de Ahorro</h3>
+        <p>
+          Establece objetivos de ahorro y recibe notificaciones de progreso para
+          mantenerte en el camino correcto.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="icon-budget"></i>
+        </div>
+        <h3>Presupuestos Inteligentes</h3>
+        <p>
+          Crea presupuestos personalizados basados en tus hábitos de gasto y
+          aprende a mejorarlos.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="icon-insights"></i>
+        </div>
+        <h3>Análisis Financiero</h3>
+        <p>
+          Obtén insights sobre tus hábitos financieros con gráficos claros y
+          recomendaciones personalizadas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="precios">
+  <div class="container">
+    <div class="section-header">
+      <h2>Planes y Precios</h2>
+      <p>Encuentra el plan perfecto para tus necesidades</p>
+    </div>
+    <div class="pricing-plans">
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Básico</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">0</span>
+            <span class="period">/mes</span>
+          </div>
+        </div>
+        <div class="pricing-features">
+          <ul>
+            <li>Seguimiento básico de gastos</li>
+            <li>Hasta 2 cuentas bancarias</li>
+            <li>Informes mensuales</li>
+            <li>App móvil básica</li>
+          </ul>
+        </div>
+        <button class="btn-pricing">Comenzar Gratis</button>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Premium</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">9.99</span>
+            <span class="period">/mes</span>
+          </div>
+        </div>
+        <div class="pricing-features">
+          <ul>
+            <li>Seguimiento ilimitado de gastos</li>
+            <li>Hasta 10 cuentas bancarias</li>
+            <li>Informes personalizados</li>
+            <li>Sincronización con todas tus cuentas</li>
+            <li>Herramientas de presupuesto avanzadas</li>
+          </ul>
+        </div>
+        <button class="btn-pricing">Suscribirse</button>
+      </div>
+
+      <!-- <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Empresas</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="amount">29.99</span>
+            <span class="period">/mes</span>
+          </div>
+        </div>
+        <div class="pricing-features">
+          <ul>
+            <li>Todas las funciones Premium</li>
+            <li>Usuarios múltiples</li>
+            <li>Facturación y contabilidad</li>
+            <li>API para empresas</li>
+            <li>Soporte prioritario 24/7</li>
+          </ul>
+        </div>
+        <button class="btn-pricing">Contactar Ventas</button>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<section class="about" id="quienes-somos">
+  <div class="container">
+    <div class="section-header">
+      <h2>Quiénes Somos</h2>
+      <p>Conoce al equipo detrás de Monee</p>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Nuestra Misión</h3>
+        <p>
+          En Monee creemos que todos merecen tener control sobre sus finanzas.
+          Nuestra misión es democratizar la educación financiera y proporcionar
+          herramientas intuitivas que permitan a cualquier persona gestionar su
+          dinero de forma efectiva.
+        </p>
+        <h3>Nuestra Historia</h3>
+        <p>
+          Fundada en 2025 por un grupo de expertos en fintech y desarrollo de
+          software, Monee nació de la frustración con las complicadas
+          aplicaciones financieras existentes. Decidimos crear una solución
+          simple pero poderosa que realmente ayude a las personas a mejorar su
+          salud financiera.
+        </p>
+      </div>
+      <div class="team-images">
+        <div class="team-member">
+          <img src="/assets/images/perfil.jpg" alt="CEO" />
+          <h4>Mario Quimet Medina Gambarte</h4>
+          <p>CEO & Fundador</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>Lo que dicen nuestros usuarios</h2>
+      <p>Miles de personas han mejorado sus finanzas con Monee</p>
+    </div>
+    <div class="testimonial-slider">
+      <div class="testimonial-card">
+        <div class="quote">
+          "Monee cambió mi relación con el dinero. Por primera vez, tengo
+          ahorros reales y un plan claro para mi futuro financiero."
+        </div>
+        <div class="user">
+          <img src="assets/images/user1.jpg" alt="Usuario" />
+          <div>
+            <h4>Roberto Sánchez</h4>
+            <p>Usuario desde 2025</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote">
+          "La interfaz es tan intuitiva que finalmente pude involucrar a toda mi
+          familia en nuestras finanzas. El presupuesto familiar nunca fue tan
+          fácil."
+        </div>
+        <div class="user">
+          <img src="assets/images/user2.jpg" alt="Usuario" />
+          <div>
+            <h4>Laura Pérez</h4>
+            <p>Usuario Premium</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contactanos">
+  <div class="container">
+    <div class="section-header">
+      <h2>Contáctanos</h2>
+      <p>Estamos aquí para responder tus preguntas</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="icon-email"></i>
+          <div>
+            <h3>Email</h3>
+            <p>soporte&#64;monee.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="icon-phone"></i>
+          <div>
+            <h3>Teléfono</h3>
+            <p>+51 123 456 789</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="icon-location"></i>
+          <div>
+            <h3>Oficina</h3>
+            <p>Av. Principal 123, Lima, Perú</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="icon-facebook"></i></a>
+          <a href="#"><i class="icon-twitter"></i></a>
+          <a href="#"><i class="icon-instagram"></i></a>
+          <a href="#"><i class="icon-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form (submit)="submitContactForm($event)">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input
+              type="text"
+              id="subject"
+              placeholder="¿En qué podemos ayudarte?"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Tu mensaje"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>Monee</h2>
+        <p>Tu aliado para una mejor salud financiera</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Producto</h3>
+          <ul>
+            <li><a href="#">Características</a></li>
+            <li><a href="#">Precios</a></li>
+            <li><a href="#">Testimonios</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Empresa</h3>
+          <ul>
+            <li><a href="#">Quiénes Somos</a></li>
+            <li><a href="#">Equipo</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a routerLink="/terminos">Términos de Servicio</a></li>
+
+            <li><a routerLink="/privacidad">Política de Privacidad</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Monee. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+<app-chatbot />

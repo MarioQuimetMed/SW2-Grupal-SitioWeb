@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- Fondo del dashboard -->
+    <rect x="0" y="0" width="600" height="400" rx="10" fill="#f8fafc"/>
+
+    <!-- Header del dashboard -->
+    <rect x="20" y="20" width="560" height="60" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="40" y="55" font-family="Arial" font-size="18" font-weight="bold" fill="#2563eb">Monee Dashboard</text>
+
+    <!-- Menú lateral -->
+    <rect x="20" y="100" width="160" height="280" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+
+    <!-- Ítems del menú -->
+    <circle cx="45" cy="130" r="8" fill="#2563eb"/>
+    <text x="60" y="135" font-family="Arial" font-size="14" fill="#1e293b">Dashboard</text>
+
+    <circle cx="45" cy="170" r="8" fill="#64748b"/>
+    <text x="60" y="175" font-family="Arial" font-size="14" fill="#64748b">Transacciones</text>
+
+    <circle cx="45" cy="210" r="8" fill="#64748b"/>
+    <text x="60" y="215" font-family="Arial" font-size="14" fill="#64748b">Presupuestos</text>
+
+    <circle cx="45" cy="250" r="8" fill="#64748b"/>
+    <text x="60" y="255" font-family="Arial" font-size="14" fill="#64748b">Metas</text>
+
+    <circle cx="45" cy="290" r="8" fill="#64748b"/>
+    <text x="60" y="295" font-family="Arial" font-size="14" fill="#64748b">Reportes</text>
+
+    <circle cx="45" cy="330" r="8" fill="#64748b"/>
+    <text x="60" y="335" font-family="Arial" font-size="14" fill="#64748b">Ajustes</text>
+
+    <!-- Gráfica principal -->
+    <rect x="200" y="100" width="380" height="160" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="220" y="130" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b">Resumen de Gastos</text>
+
+    <!-- Líneas de la gráfica -->
+    <polyline points="220,220 250,200 280,210 310,180 340,190 370,160 400,170 430,150 460,140 490,130 520,110" stroke="#2563eb" stroke-width="3" fill="none"/>
+    <polyline points="220,220 250,210 280,200 310,210 340,190 370,200 400,180 430,190 460,170 490,180 520,160" stroke="#10b981" stroke-width="3" fill="none"/>
+
+    <!-- Estadísticas rápidas -->
+    <rect x="200" y="280" width="180" height="100" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="220" y="310" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b">Ingresos</text>
+    <text x="220" y="340" font-family="Arial" font-size="24" font-weight="bold" fill="#10b981">$2,854.00</text>
+    <text x="220" y="360" font-family="Arial" font-size="14" fill="#64748b">+12% vs. mes anterior</text>
+
+    <rect x="400" y="280" width="180" height="100" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="420" y="310" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b">Gastos</text>
+    <text x="420" y="340" font-family="Arial" font-size="24" font-weight="bold" fill="#ef4444">$1,725.30</text>
+    <text x="420" y="360" font-family="Arial" font-size="14" fill="#64748b">-8% vs. mes anterior</text>
+</svg>

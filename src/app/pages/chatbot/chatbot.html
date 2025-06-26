@@ -1,0 +1,26 @@
+<div class="chatbot-widget" [class.open]="isOpen">
+  <button class="chatbot-toggle" (click)="isOpen = !isOpen">
+    <span *ngIf="!isOpen">💬</span>
+    <span *ngIf="isOpen">✖</span>
+  </button>
+  <div class="chatbot-window" *ngIf="isOpen">
+    <div class="chatbot-messages">
+      <div
+        *ngFor="let msg of messages"
+        [class.user]="msg.from === 'user'"
+        [class.bot]="msg.from === 'bot'"
+      >
+        {{ msg.text }}
+      </div>
+    </div>
+    <form (submit)="sendMessage(); $event.preventDefault()">
+      <input
+        [(ngModel)]="userMessage"
+        placeholder="Escribe tu mensaje..."
+        name="msg"
+        autocomplete="off"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>

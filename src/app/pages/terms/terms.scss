@@ -1,0 +1,42 @@
+.terms-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+}
+
+.terms-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #2d3748;
+  letter-spacing: 1px;
+}
+
+.terms-section {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.terms-section:last-child {
+  border-bottom: none;
+}
+
+.terms-section h2 {
+  font-size: 1.3rem;
+  color: #3182ce;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.terms-content {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.7;
+  min-height: 40px;
+}
