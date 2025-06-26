@@ -722,6 +722,101 @@ button {
   .pricing-card.featured {
     transform: scale(1);
   }
+
+  @media (max-width: 768px) {
+    .header .container,
+    .hero .container,
+    .features .container,
+    .pricing .container,
+    .about .container,
+    .testimonials .container,
+    .contact .container,
+    .footer .container {
+      padding: 0 10px;
+    }
+
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+
+    .nav-links li {
+      width: 100%;
+      margin: 0;
+      text-align: left;
+    }
+
+    .cta-button {
+      width: 100%;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .hero-content {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .features-grid,
+    .pricing-plans {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .feature-card,
+    .pricing-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .team-images {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .testimonial-slider {
+      flex-direction: column;
+    }
+
+    .contact-container {
+      flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-links {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
 }
 
 // Add Placeholder Styles for Icons
